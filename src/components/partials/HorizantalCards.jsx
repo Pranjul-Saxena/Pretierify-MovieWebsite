@@ -12,9 +12,9 @@ const HorizantalCards = ({ data, category }) => {
                     max-md:min-h-[70%] w-[52vh]'>
                     <img className='w-full h-[50%] object-cover ' src={`https://image.tmdb.org/t/p/original/${item.backdrop_path || item.profile_path})`} alt={item.title || item.name || item.origanal_name || item.original_title} />
                     <div key={index} className='mt-1 text-lg font-semibold text-white'>{item.title || item.name || item.origanal_name || item.original_title}</div>
-                    <p className='mt-1 mb-3 text-zinc-300 text-sm'>{item.overview}... <Link
+                    <div className='mt-1 mb-3 text-zinc-300 text-sm'>{item.overview?.slice(0, 65)}... <div
                         to={`/${item.media_type}/details/${item.id}`}
-                        className='text-zinc-500'>more</Link></p>
+                        className='text-zinc-500'>more</div></div>
                 </Link>
             ))}
         </div>
