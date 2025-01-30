@@ -12,7 +12,7 @@ export const personSlice = createSlice({
             state.info = action.payload;
       },
       removeperson: (state,action) => {
-            state.info = action.payload;
+            state.info = null;
       },
     },
   });

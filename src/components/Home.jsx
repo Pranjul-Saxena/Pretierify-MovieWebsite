@@ -8,7 +8,7 @@ import DropDown from './partials/DropDown'
 import Loading from './Loading'
 
 const Home = () => {
-    document.title = "Prettier Movies | Home"
+    document.title = "Prettierfy | Home"
 
     const [wallpaper, setwallpaper] = useState(null);
     const [trending, settrending] = useState(null);
@@ -70,7 +70,7 @@ const Home = () => {
                     </div>
                 </div>
                 
-                <HorizantalCards data={trending} />
+                <HorizantalCards data={trending} category={category} />
             </div>
         </>
     ) : <Loading />

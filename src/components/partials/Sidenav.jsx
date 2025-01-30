@@ -8,7 +8,7 @@ const SideNav = () => {
         <div className='w-[20%] h-full  border-r-2 border-zinc-400 p-3'>
             <h1 className='text-2xl text-white font-bold '>
                 <i className=" text-[#6556CD] ri-tv-fill">
-                    <span className='text-2xl ml-3 font-sans'>Prettier Movies.</span></i>
+                    <span className='text-2xl ml-3 font-sans'>Prettierfy.</span></i>
             </h1>
             <nav className='flex flex-col text-zinc-400 text-lg gap-2 ml-7'>
                 <h1 className='ml-2 mt-7 mb-3 text-white font-semibold'>New Feeds</h1>
@@ -16,7 +16,7 @@ const SideNav = () => {
                 </Link>
                 <Link to="/popular" className='hover:bg-[#6556CD] hover:text-white duration-300 rounded-md p-4'><i className="mr-1 ri-sparkling-2-line"></i>Popular
                 </Link>
-                <Link to="/movies" className='hover:bg-[#6556CD] hover:text-white duration-300 rounded-md p-4'><i className="ri-movie-line"></i> Movies
+                <Link to="/movie" className='hover:bg-[#6556CD] hover:text-white duration-300 rounded-md p-4'><i className="ri-movie-line"></i> Movies
                 </Link>
                 <Link to='/tv' className='hover:bg-[#6556CD] hover:text-white duration-300 rounded-md p-4'><i className="ri-live-line"></i> TV Shows</Link>
                 <Link to='/person' className='hover:bg-[#6556CD] hover:text-white duration-300 rounded-md p-4'><i className="ri-group-line"></i> People</Link>
