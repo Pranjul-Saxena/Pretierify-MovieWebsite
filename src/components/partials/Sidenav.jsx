@@ -10,7 +10,7 @@ const SideNav = () => {
                 <i className=" text-[#6556CD] ri-tv-fill">
                     <span className='text-2xl ml-3 font-sans'>Prettierfy.</span></i>
             </h1>
-            <nav className='flex flex-col text-zinc-400 text-lg gap-2 ml-7'>
+            <nav className='flex flex-col text-zinc-400 text-lg gap-3 ml-7 pb-[20%]'>
                 <h1 className='ml-2 mt-7 mb-3 text-white font-semibold'>New Feeds</h1>
                 <Link to="/trending" className='hover:bg-[#6556CD] hover:text-white duration-300 rounded-md p-4'><i className="ri-fire-line"></i>Trending
                 </Link>
@@ -19,11 +19,10 @@ const SideNav = () => {
                 <Link to="/movie" className='hover:bg-[#6556CD] hover:text-white duration-300 rounded-md p-4'><i className="ri-movie-line"></i> Movies
                 </Link>
                 <Link to='/tv' className='hover:bg-[#6556CD] hover:text-white duration-300 rounded-md p-4'><i className="ri-live-line"></i> TV Shows</Link>
-                <Link to='/person' className='hover:bg-[#6556CD] hover:text-white duration-300 rounded-md p-4'><i className="ri-group-line"></i> People</Link>
             </nav>
             <hr className='border-none h-[1px] bg-zinc-400' />
-            <nav className='flex flex-col text-zinc-400 text-lg gap-2 ml-7'>
-                <h1 className='ml-2 mt-7 mb-3 text-white font-semibold'>Website Information</h1>
+            <nav className='flex flex-col text-zinc-400 text-lg gap-3 ml-7 pt-8'>
+                <h1 className='ml-2 mt-5 mb-3 text-white font-semibold'>Website Information</h1>
                 <Link className='hover:bg-[#6556CD] hover:text-white duration-300 rounded-md p-4'><i className="ri-information-line"></i> About Prettier</Link>
                 <Link className='hover:bg-[#6556CD] hover:text-white duration-300 rounded-md p-4'><i className="mr-1 ri-phone-fill"></i>Contact</Link>
 
