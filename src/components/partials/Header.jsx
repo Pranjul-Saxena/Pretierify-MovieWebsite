@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Header = ({ data }) => {
-    // console.log(data)
+    console.log(data)
     return (
         <div
             style={{
@@ -22,7 +22,9 @@ const Header = ({ data }) => {
                 <span>{data.release_date || "No Information"}</span>
                 <p className='text-white gap-2 flex'><i className=" text-blue-300 ri-album-line"></i>{data.media_type.toUpperCase()}</p>
             </div>
-            <Link className='mt-4 mb-4 text-white font-normal hover:bg-[#6556CD] hover:text-white duration-300 p-4 rounded-md border-2'>Watch Trailer</Link>
+            <Link className='mt-4 mb-4 text-white font-normal hover:bg-[#6556CD] hover:text-white duration-300 p-4 rounded-md border-2'
+            to={`/${data.media_type}/details/${data.id}`}
+            >Watch Trailer</Link>
 
         </div>
     )
