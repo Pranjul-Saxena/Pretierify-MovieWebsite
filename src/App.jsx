@@ -11,6 +11,8 @@ import TvDetails from './components/TvDetails'
 import Trailer from './components/partials/Trailer'
 import NotFound from './components/NotFound'
 import Loading from './components/Loading'
+import About from './components/partials/About'
+import Contact from './components/Contact'
 
 const App = () => {
 
@@ -19,7 +21,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 3000);
+    }, 1000);
   }, [])
   return loading === false ? (
     <div className='bg-[#1F1E24] w-screen h-screen flex '>
@@ -39,6 +41,9 @@ const App = () => {
           <Route path='/tv/details/:id/trailer' element={<Trailer />} />
 
         </Route>
+
+        <Route path='/contact' element={<Contact />}/>
+        <Route path='/about' element={<About />}/>
 
 
         <Route path='*' element={<NotFound />} />
