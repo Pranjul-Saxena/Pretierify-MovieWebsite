@@ -5,7 +5,7 @@ import Header from './partials/Header'
 import HorizantalCards from './partials/HorizantalCards'
 import DropDown from './partials/DropDown'
 import Loading from './Loading'
-import SideNav from './partials/SideNav'
+import Sidenav1 from './partials/SideNav1'
 
 const Home = () => {
     document.title = "Prettierfy | Home"
@@ -55,7 +55,7 @@ const Home = () => {
 
     return wallpaper && trending ? (
         <>
-            <SideNav />
+            <Sidenav1 />
             <div className='w-[80%] h-full overflow-auto overflow-x-hidden '>
                 <Topnav />
 
