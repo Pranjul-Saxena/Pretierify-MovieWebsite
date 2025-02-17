@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import SideNav from './partials/SideNav'
 import Topnav from './partials/Topnav'
 import axios from '../utils/axios'
 import Header from './partials/Header'
 import HorizantalCards from './partials/HorizantalCards'
 import DropDown from './partials/DropDown'
 import Loading from './Loading'
+import SideNav from './partials/SideNav'
 
 const Home = () => {
     document.title = "Prettierfy | Home"
@@ -69,7 +69,7 @@ const Home = () => {
                         <DropDown title="Filter" options={["tv", "movie", "all"]} fun={(e) => setcategory(e.target.value)} />
                     </div>
                 </div>
-                
+
                 <HorizantalCards data={trending} category={category} />
             </div>
         </>
