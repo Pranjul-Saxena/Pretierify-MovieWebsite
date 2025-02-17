@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import no_image from '../../../public/no_image.png'
+import no_image from '/no_image.png'
 
 const HorizantalCards = ({ data, category }) => {
     // console.log(data);
