@@ -16,7 +16,6 @@ const MovieDetails = () => {
     const { id } = useParams();
     const dispatch = useDispatch();
 
-
     useEffect(() => {
         dispatch(asyncloadmovie(id));
         return () => {
@@ -35,7 +34,7 @@ const MovieDetails = () => {
             }}
             className={`w-screen ${info.watchproviders ? "h-[160vh]" : "h-[140vh]"} px-[10%]`}>
 
-            <div className='text-2xl flex items-center p-4 bg-zinc-300 bg-opacity-10 rounded-xl mt-6'>
+            <div className='text-2xl flex items-center p-4 bg-zinc-200 bg-opacity-20 rounded-xl mt-6'>
                 <i onClick={() => navigate(-1)} className="pr-3 pb-1 text-zinc-300 hover:text-[#6556CD] font-semibold text-xl ri-arrow-go-back-line"></i>
                 <nav className='w-full text-zinc-300 flex items-center gap-5 justify-end'>
                     <a target='_blank' href={info.detail.homepage} className='hover:text-[#6556CD]'><HiOutlineExternalLink /></a>
@@ -113,5 +112,4 @@ const MovieDetails = () => {
         </div>
     ) : <Loading />
 }
-
 export default MovieDetails
