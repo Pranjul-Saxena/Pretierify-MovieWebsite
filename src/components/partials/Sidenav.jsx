@@ -8,7 +8,7 @@ const SideNav = () => {
         <div className='w-[20%] h-full  border-r-2 border-zinc-400 p-3'>
             <h1 className='text-2xl text-white font-bold '>
                 <i className=" text-[#6556CD] ri-tv-fill">
-                    <span className='text-2xl ml-3 font-sans'>Prettierfy.</span></i>
+                    <span className='text-2xl ml-3 font-sans'>Prettier</span></i>
             </h1>
             <nav className='flex flex-col text-zinc-400 text-lg gap-3 ml-7 pb-[20%]'>
                 <h1 className='ml-2 mt-7 mb-3 text-white font-semibold'>New Feeds</h1>
