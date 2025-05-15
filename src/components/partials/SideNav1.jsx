@@ -23,7 +23,7 @@ const Sidenav1 = () => {
             <hr className='border-none h-[1px] bg-zinc-400' />
             <nav className='flex flex-col text-zinc-400 text-lg gap-3 ml-7 pt-8'>
                 <h1 className='ml-2 mt-5 mb-3 text-white font-semibold'>Website Information</h1>
-                <Link to='/about' className='hover:bg-[#6556CD] hover:text-white duration-300 rounded-md p-4'><i className="ri-information-line"></i> About Prettier</Link>
+                <Link to='/about' className='hover:bg-[#6556CD] hover:text-white duration-300 rounded-md p-4'><i className="ri-information-line"></i> About Prettierfy</Link>
                 <Link to='/contact' className='hover:bg-[#6556CD] hover:text-white duration-300 rounded-md p-4'><i className="mr-1 ri-phone-fill"></i>Contact</Link>
 
             </nav>
